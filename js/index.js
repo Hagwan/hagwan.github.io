@@ -334,13 +334,13 @@
                         className: "mb-4",
                         children: ["I am a passionate and skilled software engineer with a deep love for crafting elegant, efficient, and user-friendly solutions. Specializing in ", " ", (0, a.jsx)("a", {
                             className: "font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300",
-                            href: "https://www.Flutter.com/",
+                            href: "",
                             target: "_blank",
                             rel: "noreferrer",
                             children: "Flutter"
                         }), ", HTML, CSS, and JavaScript, I excel in turning complex problems into streamlined, intuitive applications. My dedication to continuous learning and staying updated with the latest industry trends ensures that I deliver cutting-edge solutions. Let's collaborate to bring your digital visions to life!", (0, a.jsx)("a", {
                             className: "font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300",
-                            href: "https://www.apple.com/apple-music/",
+                            href: "",
                             target: "_blank",
                             rel: "noreferrer",
                         }), "."]
