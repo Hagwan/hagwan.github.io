@@ -1,14 +1,14 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [818], {
-        8312: function(e, t, s) {
-            (window.__NEXT_P = window.__NEXT_P || []).push(["/", function() {
+        8312: function (e, t, s) {
+            (window.__NEXT_P = window.__NEXT_P || []).push(["/", function () {
                 return s(7211)
             }])
         },
-        7604: function(e, t, s) {
+        7604: function (e, t, s) {
             "use strict";
             s.d(t, {
-                Z: function() {
+                Z: function () {
                     return r
                 }
             });
@@ -44,10 +44,10 @@
                 })
             }
         },
-        1365: function(e, t, s) {
+        1365: function (e, t, s) {
             "use strict";
             s.d(t, {
-                Z: function() {
+                Z: function () {
                     return l
                 }
             });
@@ -200,10 +200,10 @@
                 }
             }
         },
-        4533: function(e, t, s) {
+        4533: function (e, t, s) {
             "use strict";
             s.d(t, {
-                Z: function() {
+                Z: function () {
                     return l
                 }
             });
@@ -220,10 +220,10 @@
                 })
             }
         },
-        8425: function(e, t, s) {
+        8425: function (e, t, s) {
             "use strict";
             s.d(t, {
-                Z: function() {
+                Z: function () {
                     return n
                 }
             });
@@ -318,10 +318,10 @@
                 })
             }
         },
-        7211: function(e, t, s) {
+        7211: function (e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
-                default: function() {
+                default: function () {
                     return k
                 }
             });
@@ -421,11 +421,11 @@
                             },
                             positions: ["Augmented Reality Software Engineer"],
                             desc: "At Xentral Methods, I interned as an Augmented Reality Software Engineer and Flutter mobile developer. This role immersed me in cutting-edge AR technology and honed my skills in creating immersive experiences. Additionally, I gained expertise in crafting versatile and user-friendly mobile applications.",
-                            tech: ["Flutter", "HTML", "JavaScript", "Gitlab", "MindAR","ARcore"],
+                            tech: ["Flutter", "HTML", "JavaScript", "Gitlab", "MindAR", "ARcore"],
                             links: [{
                                 title: "XentralMethods",
                                 url: "https://www.xentralmethods.com/"
-                            }, ]
+                            },]
                         }, {
                             date: "2019 — 2023",
                             company: {
@@ -443,7 +443,7 @@
                             },
                             positions: ["Education"],
                             desc: "I attended Al Shola Private School in the United Arab Emirates during my school years. The institution provided a diverse and enriching educational experience, fostering both academic excellence and personal growth.",
-                           
+
                         },].map(((e, t) => (0, a.jsx)("li", {
                             className: "mb-12",
                             children: (0, a.jsxs)("div", {
@@ -597,24 +597,27 @@
                 f = s.n(g);
 
             function v() {
-                let e = e => {};
+                let e = e => { };
                 return (0, a.jsxs)("div", {
                     children: [(0, a.jsx)("ul", {
                         className: "group/list",
                         children: [{
                             title: "MyPet",
                             link: "https://github.com/Hagwan/MyPet",
-                            desc: "MyPet is a comprehensive Flutter app catering to pet owners' needs, offering services like vet appointments, pet hotels, reminders, and profiles."
+                            desc: "MyPet is a comprehensive Flutter app catering to pet owners' needs, offering services like vet appointments, pet hotels, reminders, and profiles.",
+                            tech: ["Flutter", "Figma", "Firebase ", "Github", "Testing", "API", "Android"],
                         }, {
                             title: "SuperApp",
                             link: "https://www.xentralmethods.com/",
                             desc: "During my internship, I worked with Xentral Methods in SuperApp, a Flutter application for iOS and Android that focuses on augmented reality (AR) for children's books.",
-                            tech: ["Flutter", "MindAR", "arcore_flutter ", "Gitlab", "Firebase", "Figma" ],
+                            tech: ["Flutter", "MindAR", "arcore_flutter ", "Gitlab", "Firebase", "Figma"],
                             github: "https://github.com/hagwanx/"
                         }, {
-                            title: "Coming Soon",
-                            link: "",
-                            desc: "...",
+                            title: "Gemini Meets ChatGPT",
+                            link: "https://github.com/Hagwan/GeminiAI-Powered-ChatGPT-UI",
+                            desc: "GeminiAI-Powered-ChatGPT-UI Enjoy a design that mirrors ChatGPT's familiarity, making it easy for users to transition and explore GeminiAI's functionalities.",
+                            tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
+
                         }, {
                             title: "Coming Soon",
                             link: "",
@@ -637,7 +640,7 @@
                                         children: t.desc
                                     }), t.github && (0, a.jsx)(e, {
                                         repoUrl: t.github
-                                    }), t.download && (0, a.jsxs)("a", { }), t.tech && (0, a.jsx)("ul", {
+                                    }), t.download && (0, a.jsxs)("a", {}), t.tech && (0, a.jsx)("ul", {
                                         className: "mt-2 flex flex-wrap",
                                         "aria-label": "Technologies used:",
                                         children: t.tech.map(((e, t) => (0, a.jsx)("li", {
@@ -746,9 +749,9 @@
     },
 
 
-    
-    function(e) {
-        e.O(0, [664, 506, 774, 888, 179], (function() {
+
+    function (e) {
+        e.O(0, [664, 506, 774, 888, 179], (function () {
             return e(e.s = 8312)
         })), _N_E = e.O()
     }
