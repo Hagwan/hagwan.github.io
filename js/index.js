@@ -619,10 +619,10 @@
                             tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
 
                         }, {
-                            title: "Coming Soon",
-                            link: "",
+                            title: "Simple AR Project",
+                            link: "ar.html",
                             desc: "...",
-                            tech: ["", "", ""],
+                            tech: ["MindAR", "...", "..."],
                         }].map(((t, s) => (0, a.jsx)("li", {
                             className: "mb-12",
                             children: (0, a.jsxs)("div", {

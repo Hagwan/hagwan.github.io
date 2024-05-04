@@ -1,0 +1,11 @@
+Model Information:
+* title:	cristiano Samba Dancing
+* source:	https://sketchfab.com/3d-models/cristiano-samba-dancing-0b1c9a2f97c648b5945809c41486cb31
+* author:	fenglier (https://sketchfab.com/lfenglier)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "cristiano Samba Dancing" (https://sketchfab.com/3d-models/cristiano-samba-dancing-0b1c9a2f97c648b5945809c41486cb31) by fenglier (https://sketchfab.com/lfenglier) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
