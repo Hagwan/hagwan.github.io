@@ -6,25 +6,88 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/band-example/band.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc:Models/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="raccoonModel" src="Models/model1/scene.gltf"></a-asset-item>
-        <a-asset-item id="bearModel" src="Models/model0/scene.gltf"></a-asset-item>
-
+        <a-asset-item id="1" src="Models/"></a-asset-item>
+        <a-asset-item id="2" src="Models/car/scene.gltf"></a-asset-item>
+        <a-asset-item id="3" src="Models/car2/scene.gltf"></a-asset-item>
+        <a-asset-item id="4" src="Models/cat/scene.gltf"></a-asset-item>
+        <a-asset-item id="5" src="Models/chanel_parfum/scene.gltf"></a-asset-item>
+        <a-asset-item id="6" src="Models/cybertruck/scene.gltf"></a-asset-item>
+        <a-asset-item id="7" src="Models/plane/scene.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
+      <!-- vision-pro
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#raccoonModel" animation-mixer>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- dog
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0.8" scale="0.9 0.9 0.9" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- gym
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.009 0.009 0.009" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- heart
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.2 0.2 0.2" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- lost_programmer
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="270 0 0 " position="0 0 0.3" scale="0.5 0.5 0.5" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- nike_shoe
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="2.5 2.5 2.5" src="#1" animation-mixer>
+      </a-entity> -->
+
+      <!-- robot
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0.2" scale="0.7 0.7 0.7" src="#1" animation-mixer>
+      </a-entity> -->
+
+        
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#1" animation-mixer>
       </a-entity>
+
 
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.01 0.01 0.01" src="#bearModel" animation-mixer>
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.003 0.003 0.003" src="#2" animation-mixer>
       </a-entity>
 
-     
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.6 0.6 0.6" src="#3" animation-mixer>
+      </a-entity>
 
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.08 0.08 0.08" src="#4" animation-mixer>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#5" animation-mixer>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.4 0.4 0.4" src="#6" animation-mixer>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.8 0.8 0.8" src="#7" animation-mixer>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.01 0.01 0.01" src="#8" animation-mixer>
+      </a-entity>
+    
 
     </a-scene>
   </body>
