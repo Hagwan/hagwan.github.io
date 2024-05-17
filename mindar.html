@@ -1,94 +1,246 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR-Vision</title>
+    <link rel="icon" type="image/png" sizes="512x192" href="images/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <script>
+      AFRAME.registerComponent('smooth-follow', {
+        schema: {
+          damping: {type: 'number', default: 0.1}
+        },
+        init: function() {
+          this.targetPosition = new THREE.Vector3();
+          this.targetQuaternion = new THREE.Quaternion();
+        },
+        tick: function() {
+          const object3D = this.el.object3D;
+          const target = this.el.components['mindar-image-target'];
+
+          if (target && target.el.object3D.visible) {
+            this.targetPosition.lerp(target.el.object3D.position, this.data.damping);
+            object3D.position.copy(this.targetPosition);
+            this.targetQuaternion.slerp(target.el.object3D.quaternion, this.data.damping);
+            object3D.quaternion.copy(this.targetQuaternion);
+          }
+        }
+      });
+    </script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc:Models/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: Models/targets.mind; filterMinCF: 0.0001; filterBeta: 0.001;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="1" src="Models/"></a-asset-item>
-        <a-asset-item id="2" src="Models/car/scene.gltf"></a-asset-item>
-        <a-asset-item id="3" src="Models/car2/scene.gltf"></a-asset-item>
-        <a-asset-item id="4" src="Models/cat/scene.gltf"></a-asset-item>
-        <a-asset-item id="5" src="Models/chanel_parfum/scene.gltf"></a-asset-item>
-        <a-asset-item id="6" src="Models/cybertruck/scene.gltf"></a-asset-item>
-        <a-asset-item id="7" src="Models/plane/scene.gltf"></a-asset-item>
+        <a-asset-item id="0" src="Models/lost_programmer/scene.gltf"></a-asset-item>
+        <a-asset-item id="1" src="Models/heart/scene.gltf"></a-asset-item>
+        <a-asset-item id="2" src="Models/male_human_skeleton_-_zbrush_-_anatomy_study/scene.gltf"></a-asset-item>
+        <a-asset-item id="3" src="Models/gym/scene.gltf"></a-asset-item>
+        <a-asset-item id="4" src="Models/gramophone/scene.gltf"></a-asset-item>
+        <a-asset-item id="5" src="Models/PC/scene.gltf"></a-asset-item>
+        <a-asset-item id="6" src="Models/vision-pro/scene.gltf"></a-asset-item>
+        <a-asset-item id="7" src="Models/nike_shoe/scene.gltf"></a-asset-item>
+        <a-asset-item id="8" src="Models/chanel_parfum/scene.gltf"></a-asset-item>
+        <a-asset-item id="9" src="Models/cybertruck/scene.gltf"></a-asset-item>
+        <a-asset-item id="10" src="Models/porsche_911/scene.gltf"></a-asset-item>
+        <a-asset-item id="11" src="Models/book/scene.gltf"></a-asset-item>
+        <a-asset-item id="12" src="Models/cat/scene.gltf"></a-asset-item>
+        <a-asset-item id="13" src="Models/plane/scene.gltf"></a-asset-item>
+        <a-asset-item id="14" src="Models/sci_fi_jet_fighter_plane/scene.gltf"></a-asset-item>
+        <a-asset-item id="15" src="Models/messi/scene.gltf"></a-asset-item>
+        <a-asset-item id="16" src="Models/mbappe/scene.gltf"></a-asset-item>
+
+        <video id="videoPreview" preload autoplay loop>
+          <source src="Models/Videos/Code.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview1" preload autoplay loop>
+          <source src="Models/Videos/HeartBeat.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview2" preload autoplay loop>
+          <source src="Models/Videos/YeahBuddy.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview3" preload autoplay loop>
+          <source src="Models/Videos/umm1.mp4" type="video/mp4" /> 
+        </video>
+
+        <video id="videoPreview4" preload autoplay loop>
+          <source src="Models/Videos/VisionPro.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview5" preload autoplay loop>
+          <source src="Models/Videos/911.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview6" preload autoplay loop>
+          <source src="Models/Videos/Meow.mp4" type="video/mp4" />
+        </video>
+
+        <video id="videoPreview7" preload autoplay loop>
+          <source src="Models/Videos/Wowo.mp4" type="video/mp4" /> 
+        </video>
+        
+    
+
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-      <!-- vision-pro
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#1" animation-mixer>
-      </a-entity> -->
+      <a-entity mindar-image-target="targetIndex: 0" id="videoPlane">
+        <a-text value="Hi i am Hagwan \n lets code together" id="text-en" color="#2DD4BF" align="center" width="5" position="0 1 0" 
+         font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt" 
+         
+          animation="property: position; to: 0 0.5 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
+          ></a-text>
+        <a-gltf-model smooth-follow rotation="270 0 0" position="0 0 0.3" scale="0.6 0.6 0.6" src="#0" animation-mixer></a-gltf-model>
+        <video id="video" src="#videoPreview" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="50" height="50"></video>
 
-      <!-- dog
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0.8" scale="0.9 0.9 0.9" src="#1" animation-mixer>
-      </a-entity> -->
-
-      <!-- gym
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.009 0.009 0.009" src="#1" animation-mixer>
-      </a-entity> -->
-
-      <!-- heart
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.2 0.2 0.2" src="#1" animation-mixer>
-      </a-entity> -->
-
-      <!-- lost_programmer
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="270 0 0 " position="0 0 0.3" scale="0.5 0.5 0.5" src="#1" animation-mixer>
-      </a-entity> -->
-
-      <!-- nike_shoe
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="2.5 2.5 2.5" src="#1" animation-mixer>
-      </a-entity> -->
-
-      <!-- robot
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0.2" scale="0.7 0.7 0.7" src="#1" animation-mixer>
-      </a-entity> -->
-
-        
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#1" animation-mixer>
       </a-entity>
 
+      <a-entity mindar-image-target="targetIndex: 1" id="videoPlane1">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0.7" scale="0.2 0.2 0.2" src="#1" animation-mixer></a-gltf-model>
+        <video id="video1" src="#videoPreview1" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
 
-      <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.003 0.003 0.003" src="#2" animation-mixer>
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.6 0.6 0.6" src="#3" animation-mixer>
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 1" scale="0.13 0.13 0.13" src="#2" animation-mixer></a-gltf-model>
       </a-entity>
 
-      <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.08 0.08 0.08" src="#4" animation-mixer>
+      <a-entity mindar-image-target="targetIndex: 3" id="videoPlane2">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#3" animation-mixer></a-gltf-model>
+        <video id="video2" src="#videoPreview2" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
       </a-entity>
 
-      <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#5" animation-mixer>
+      <a-entity mindar-image-target="targetIndex: 4" id="videoPlane3" >
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.25 0.25 0.25" src="#4" animation-mixer> </a-gltf-model>
+        <video id="video3" src="#videoPreview3" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
+        
       </a-entity>
 
-      <a-entity mindar-image-target="targetIndex: 5">
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.4 0.4 0.4" src="#6" animation-mixer>
+      <a-entity mindar-image-target="targetIndex: 5" >
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.6 0.6 0.6" src="#5" animation-mixer></a-gltf-model>
+
       </a-entity>
 
-      <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.8 0.8 0.8" src="#7" animation-mixer>
+      <a-entity mindar-image-target="targetIndex: 6" id="videoPlane4">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0.5" scale="0.5 0.5 0.5" src="#6" animation-mixer></a-gltf-model>
+        <video id="video4" src="#videoPreview4" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.01 0.01 0.01" src="#8" animation-mixer>
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="2 2 2" src="#7" animation-mixer></a-gltf-model>
       </a-entity>
-    
 
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.6 0.6 0.6" src="#8" animation-mixer></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.4 0.4 0.4" src="#9" animation-mixer></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 10" id="videoPlane5">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.7 0.7 0.7" src="#10" animation-mixer></a-gltf-model>
+        <video id="video5" src="#videoPreview5" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 11">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.03 0.03 0.03" src="#11" animation-mixer></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 12" id="videoPlane6">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.07 0.07 0.07" src="#12" animation-mixer></a-gltf-model>
+        <video id="video6" src="#videoPreview6" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 13">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 1" scale="1 1 1" src="#13" animation-mixer></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 14">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 1.2" scale="0.3 0.3 0.3" src="#14" animation-mixer></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 15" id="videoPlane7">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.5 0.5 0.5" src="#15" animation-mixer></a-gltf-model>
+        <video id="video7" src="#videoPreview7" autoplay loop="true" position="1 1 0"  crossorigin="anonymous" playsinline="true" webkit-playsinline="true" muted="true" preload="auto" width="16" height="9"></video>
+
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 16">
+        <a-gltf-model smooth-follow rotation="90 0 0" position="0 0 0" scale="0.5 0.5 0.5" src="#16" animation-mixer></a-gltf-model>
+      </a-entity>
     </a-scene>
+
+    <script>
+
+      const scene = document.querySelector('a-scene');
+
+      // Get video elements
+        const videoPreview = document.querySelector('#videoPreview');
+        const videoPreview1 = document.querySelector('#videoPreview1');
+        const videoPreview2 = document.querySelector('#videoPreview2');
+        const videoPreview3 = document.querySelector('#videoPreview3');
+        const videoPreview4 = document.querySelector('#videoPreview4');
+        const videoPreview5 = document.querySelector('#videoPreview5');
+        const videoPreview6 = document.querySelector('#videoPreview6');
+        const videoPreview7 = document.querySelector('#videoPreview7');   
+
+      // Get target elements
+        const videoPlane = document.querySelector('#videoPlane');
+        const videoPlane1 = document.querySelector('#videoPlane1');
+        const videoPlane2 = document.querySelector('#videoPlane2');
+        const videoPlane3 = document.querySelector('#videoPlane3');
+        const videoPlane4 = document.querySelector('#videoPlane4');
+        const videoPlane5 = document.querySelector('#videoPlane5');
+        const videoPlane6 = document.querySelector('#videoPlane6');
+        const videoPlane7 = document.querySelector('#videoPlane7');
+
+      // Play video on target found
+        function playVideo(target, videoElement) {
+          target.addEventListener('targetFound', () => {
+            videoElement.play();
+          });
+        }
+
+      // Pause video on target lost
+        function pauseVideo(target, videoElement) {
+          target.addEventListener('targetLost', () => {
+            videoElement.pause();
+          });
+        }
+
+      // Attach event listeners
+        playVideo(videoPlane, videoPreview);
+        playVideo(videoPlane1, videoPreview1);
+        playVideo(videoPlane2, videoPreview2);
+        playVideo(videoPlane3, videoPreview3);
+        playVideo(videoPlane4, videoPreview4);
+        playVideo(videoPlane5, videoPreview5);
+        playVideo(videoPlane6, videoPreview6);
+        playVideo(videoPlane7, videoPreview7);
+
+        pauseVideo(videoPlane, videoPreview);
+        pauseVideo(videoPlane1, videoPreview1);
+        pauseVideo(videoPlane2, videoPreview2);
+        pauseVideo(videoPlane3, videoPreview3);
+        pauseVideo(videoPlane4, videoPreview4);
+        pauseVideo(videoPlane5, videoPreview5);
+        pauseVideo(videoPlane6, videoPreview6);
+        pauseVideo(videoPlane7, videoPreview7);
+
+    </script>
   </body>
 </html>

@@ -618,11 +618,12 @@
                             desc: "GeminiAI-Powered-ChatGPT-UI Enjoy a design that mirrors ChatGPT's familiarity, making it easy for users to transition and explore GeminiAI's functionalities.",
                             tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
 
-                        }, {
-                            title: "Simple AR Project",
+                        },
+                        {
+                            title: "AR-Vision",
                             link: "ar.html",
-                            desc: "...",
-                            tech: ["MindAR", "...", "..."],
+                            desc: "Welcome to My AR Project, a dynamic and engaging augmented reality (AR) application built using MindAR. This project is designed to showcase the potential of AR across various fields such as education, shopping, and entertainment.",
+                            tech: ["MindAR", "AFrame", "3DModels", "Augmented Reality", "HTML", "CSS", "JavaScript"],
                         }].map(((t, s) => (0, a.jsx)("li", {
                             className: "mb-12",
                             children: (0, a.jsxs)("div", {
@@ -654,7 +655,9 @@
                                 })]
                             })
                         }, s)))
-                    }), (0, a.jsx)("div", {
+                    }),
+
+                    (0, a.jsx)("div", {
                         className: "mt-12",
                         children: (0, a.jsx)(m, {
                             title: "View Full Project Archive",

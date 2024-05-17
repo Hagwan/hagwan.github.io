@@ -4,10 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>AR</title>
+    <title>AR-Vision</title>
     <meta name="next-head-count" content="4" />
     <link rel="stylesheet" href="css/style.css" data-n-g="" />
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x192"
+      href="images/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -34,7 +62,7 @@
             style="
               font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
                 sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-              height: 100vh;
+              height: 30vh;
               text-align: center;
               display: flex;
               flex-direction: column;
@@ -65,13 +93,18 @@
 
               <p class="instructions">
                 Unleash the full potential! <br />
-                View the AR experience in stunning detail with your
-                <span class="mobile"> mobile phone.</span> <br />For optimal
-                viewing, open this page on your
-                <span class="mobile">PC</span> or  <span class="mobile">Ipad</span> to display the 3D models at the
-                top of your screen.
-              </p>
+                Scan the QR code with your
+                <span class="mobile"> Mobile Phone</span> to enjoy an immersive
+                augmented reality experience.
 
+                <br />For the best viewing experience, open this page on your
+                <span class="mobile">PC</span> or
+                <span class="mobile">Ipad</span> to make the 3D models alive!
+              </p>
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="flex: 50%; padding: 5px; margin-top: 70px">
               <a class="gloweybuttons" href="tar-img.html">
                 <span></span>
                 <span></span>
@@ -79,16 +112,29 @@
                 <span></span>
                 Target Images 💻🖱️
               </a>
+            </div>
 
-              <a class="gloweybuttons" href="mindar.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Launch AR Experience 📱
-              </a>
-
-              
+            <div style="flex: 50%; padding: 5px">
+              <div
+                style="
+                  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+                    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+                  height: 35vh;
+                  text-align: center;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <ul class="slider1">
+                  <li>
+                    <input type="radio" id="slide1" name="slide2" checked />
+                    <label for="slide2"></label>
+                    <img src="images/QR.png" alt="Panel 1" />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
