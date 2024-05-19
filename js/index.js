@@ -236,7 +236,7 @@
                 let {
                     title: t,
                     pathname: s
-                } = e, r = "Hagwan Mohammed", n = "", o = "", c = "".concat(o, "/og.png"), d = "@hagwanx", m = r;
+                } = e, r = "Hagwan Mohammed", n = "", o = "", c = "".concat(o, "images/target-images/Hi.jpg"), d = "@hagwanx", m = r;
                 return t !== r && (m = "".concat(t, " | ").concat(r)), (0, a.jsxs)(i(), {
                     children: [(0, a.jsx)("title", {
                         children: m
