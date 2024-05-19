@@ -601,30 +601,50 @@
                 return (0, a.jsxs)("div", {
                     children: [(0, a.jsx)("ul", {
                         className: "group/list",
-                        children: [{
-                            title: "MyPet",
-                            link: "https://github.com/Hagwan/MyPet",
-                            desc: "MyPet is a comprehensive Flutter app catering to pet owners' needs, offering services like vet appointments, pet hotels, reminders, and profiles.",
-                            tech: ["Flutter", "Figma", "Firebase ", "Github", "Testing", "API", "Android"],
-                        }, {
-                            title: "SuperApp",
-                            link: "https://www.xentralmethods.com/",
-                            desc: "During my internship, I worked with Xentral Methods in SuperApp, a Flutter application for iOS and Android that focuses on augmented reality (AR) for children's books.",
-                            tech: ["Flutter", "MindAR", "arcore_flutter ", "Gitlab", "Firebase", "Figma"],
-                            github: "https://github.com/hagwanx/"
-                        }, {
-                            title: "Gemini Meets ChatGPT",
-                            link: "https://github.com/Hagwan/GeminiAI-Powered-ChatGPT-UI",
-                            desc: "GeminiAI-Powered-ChatGPT-UI Enjoy a design that mirrors ChatGPT's familiarity, making it easy for users to transition and explore GeminiAI's functionalities.",
-                            tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
+                        children: [
 
-                        },
-                        {
-                            title: "AR-Vision",
-                            link: "ar.html",
-                            desc: "Welcome to My AR Project, a dynamic and engaging augmented reality (AR) application built using MindAR. This project is designed to showcase the potential of AR across various fields such as education, shopping, and entertainment.",
-                            tech: ["MindAR", "AFrame", "3DModels", "Augmented Reality", "HTML", "CSS", "JavaScript"],
-                        }].map(((t, s) => (0, a.jsx)("li", {
+
+
+                            {
+                                title: "AR-Vision",
+                                link: "ar.html",
+                                desc: "Welcome to My AR Project, a dynamic and engaging augmented reality (AR) application built using MindAR. This project is designed to showcase the potential of AR across various fields such as education, shopping, and entertainment.",
+                                tech: ["MindAR", "AFrame", "3DModels", "Augmented Reality", "HTML", "CSS", "JavaScript"],
+                            },
+
+                            {
+                                title: "Gemini Meets ChatGPT",
+                                link: "https://github.com/Hagwan/GeminiAI-Powered-ChatGPT-UI",
+                                desc: "GeminiAI-Powered-ChatGPT-UI Enjoy a design that mirrors ChatGPT's familiarity, making it easy for users to transition and explore GeminiAI's functionalities.",
+                                tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
+
+                            },
+
+                            {
+                                title: "MyPet",
+                                link: "https://github.com/Hagwan/MyPet",
+                                desc: "MyPet is a comprehensive Flutter app catering to pet owners' needs, offering services like vet appointments, pet hotels, reminders, and profiles.",
+                                tech: ["Flutter", "Figma", "Firebase ", "Github", "Testing", "API", "Android"],
+                            },
+
+
+                            {
+                                title: "SuperApp",
+                                link: "https://www.xentralmethods.com/",
+                                desc: "During my internship, I worked with Xentral Methods in SuperApp, a Flutter application for iOS and Android that focuses on augmented reality (AR) for children's books.",
+                                tech: ["Flutter", "MindAR", "arcore_flutter ", "Gitlab", "Firebase", "Figma"],
+                                github: "https://github.com/hagwanx/"
+                            },
+
+
+
+
+
+
+
+
+
+                        ].map(((t, s) => (0, a.jsx)("li", {
                             className: "mb-12",
                             children: (0, a.jsxs)("div", {
                                 className: "group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
