@@ -407,10 +407,19 @@
                         children: [{
                             date: "Present",
                             company: {
-                                name: "",
+                                name: "Itqan Systematic",
                                 link: ""
                             },
-                            positions: ["Software Engineer", "Open to work", "Mobile Developer"],
+                            positions: ["ERP Developer", "", "Open to work"],
+                            desc: "Currently, I am employed at Itqan Systematic as an ERP Developer. I am keen to contribute to innovative projects and deliver solutions that prioritize user satisfaction.",
+                            tech: ["C#", "ERP", "Visual Studio", "SQL Server","Git",".NET Core"]
+                        }, {
+                            date: "2023",
+                            company: {
+                                name: "Freelancer",
+                                link: ""
+                            },
+                            positions: ["Mobile Developer", "", ""],
                             desc: "Post my internship, I now invest my free time in crafting mobile applications. Proficient in Flutter, I'm actively seeking opportunities to apply my skills in a dynamic team. Eager to contribute to innovative projects and drive solutions focused on user satisfaction.",
                             tech: ["Flutter", "Firebase", "Figma", "Github"]
                         }, {
@@ -426,6 +435,15 @@
                                 title: "XentralMethods",
                                 url: "https://www.xentralmethods.com/"
                             },]
+                        },{
+                            date: "2019-2023",
+                            company: {
+                                name: "Arabian Culture Society",
+                                link: "https://www.youtube.com/@acsmmu"
+                            },
+                            positions: ["High Committee Club Member", "", ""],
+                            desc: "volunteered as a High Committee Club Member in the Arabian Culture Society at Multimedia University for around 5 years during my university studies. In this role, I actively contributed to organizing cultural events and charity activities, and played a key role in promoting cultural awareness and engagement among students.",
+                            tech: ["Event Planning", "Teamwork", "Adaptability", "Communication","Problem-Solving","Time Management","Fundraising"]
                         }, {
                             date: "2019 — 2023",
                             company: {
@@ -604,7 +622,12 @@
                         children: [
 
 
-
+                            {
+                                title: "Diagnosio",
+                                link: "https://github.com/Hagwan/Diagnosio",
+                                desc: "Designed and implemented a Flutter application leveraging artificial intelligence to diagnose patient diseases via text or image inputs, offering preliminary health information prior to a clinical consultation.",
+                                tech: ["Flutter", "Dart", "Gemini-API", "Android", "AI",],
+                            },
                             {
                                 title: "AR-Vision",
                                 link: "ar.html",
