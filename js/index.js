@@ -330,36 +330,87 @@
 
             function r() {
                 return (0, a.jsxs)("div", {
-                    children: [(0, a.jsxs)("p", {
-                        className: "mb-4",
-                        children: ["I am a passionate and skilled software engineer with a deep love for crafting elegant, efficient, and user-friendly solutions. Specializing in ", " ", (0, a.jsx)("a", {
-                            className: "font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300",
-                            href: "",
-                            target: "_blank",
-                            rel: "noreferrer",
-                            children: "Flutter"
-                        }), ", HTML, CSS, and JavaScript, I excel in turning complex problems into streamlined, intuitive applications. My dedication to continuous learning and staying updated with the latest industry trends ensures that I deliver cutting-edge solutions. Let's collaborate to bring your digital visions to life!", (0, a.jsx)("a", {
-                            className: "font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300",
-                            href: "",
-                            target: "_blank",
-                            rel: "noreferrer",
-                        }), "."]
-                    }), (0, a.jsxs)("p", {
-                        children: ["When I’m not at the computer, I’m usually playing football, Reading, hanging out with family or friends, or Going to the ", " ", (0, a.jsxs)("span", {
-                            className: "group/korok inline-flex lg:cursor-[url('/images/koroks/Elma.png'),_pointer] lg:font-medium lg:text-slate-200",
-                            children: [(0, a.jsx)("span", {
-                                className: "sr-only",
-                                children: "GYM"
-                            }), "GYM".split("").map(((e, t) => (0, a.jsx)("span", {
-                                className: "".concat(["group-hover/korok:text-red-400", "group-hover/korok:text-orange-400", "group-hover/korok:text-yellow-400", "group-hover/korok:text-lime-400", "group-hover/korok:text-green-400", "group-hover/korok:text-teal-400", "group-hover/korok:text-cyan-400", "group-hover/korok:text-sky-400", "group-hover/korok:text-blue-400", "group-hover/korok:text-indigo-400", "group-hover/korok:text-violet-400"][t], " transition duration-75 group-hover/korok:-translate-y-px ").concat(["delay-[50ms]", "delay-[75ms]", "delay-[100ms]", "delay-[125ms]", "delay-[150ms]", "delay-[175ms]", "delay-[200ms]", "delay-[225ms]", "delay-[250ms]", "delay-[275ms]", "delay-[300ms]"][t]),
-                                "aria-hidden": "true",
-                                children: " " === e ? " " : e
-                            }, t)))]
-                        }), "."]
-                    })]
-                })
+                    children: [
+                        (0, a.jsx)("h2", {
+                            className: "text-lg font-semibold tracking-tight text-slate-200 mb-6",
+                            children: "About"
+                        }),
+                        (0, a.jsxs)("div", {
+                            className: "space-y-4",
+                            children: [
+                                (0, a.jsxs)("p", {
+                                    className: "mb-4  leading-relaxed text-slate-300",
+                                    children: [
+                                        "I’m Mohammed Hagwan, a lead software engineer and project manager building web, mobile, ERP, and AI solutions. I work with Flutter, Next.js, Firebase/Supabase, and automation tools to ship scalable, business-aligned products. I’ve led end-to-end projects for teams like SAMA Trending and Xentral Methods, coordinating designers and developers to deliver real value. I also integrate LLMs and chatbots to automate workflows and enhance user experience."
+                                    ]
+                                }),
+                                (0, a.jsxs)("p", {
+                                    className: "text-sm leading-relaxed text-slate-400",
+                                    children: [
+                                        "Outside work I’m usually playing football, reading, spending time with family and friends, or at the ",
+                                        (0, a.jsxs)("span", {
+                                            className:
+                                                "group/korok inline-flex lg:cursor-[url('/images/koroks/Elma.png'),_pointer] lg:font-medium lg:text-slate-200",
+                                            children: [
+                                                (0, a.jsx)("span", {
+                                                    className: "sr-only",
+                                                    children: "GYM"
+                                                }),
+                                                "GYM".split("").map((e, t) =>
+                                                    (0, a.jsx)(
+                                                        "span",
+                                                        {
+                                                            className: ""
+                                                                .concat(
+                                                                    [
+                                                                        "group-hover/korok:text-red-400",
+                                                                        "group-hover/korok:text-orange-400",
+                                                                        "group-hover/korok:text-yellow-400",
+                                                                        "group-hover/korok:text-lime-400",
+                                                                        "group-hover/korok:text-green-400",
+                                                                        "group-hover/korok:text-teal-400",
+                                                                        "group-hover/korok:text-cyan-400",
+                                                                        "group-hover/korok:text-sky-400",
+                                                                        "group-hover/korok:text-blue-400",
+                                                                        "group-hover/korok:text-indigo-400",
+                                                                        "group-hover/korok:text-violet-400"
+                                                                    ][t],
+                                                                    " transition duration-75 group-hover/korok:-translate-y-px "
+                                                                )
+                                                                .concat(
+                                                                    [
+                                                                        "delay-[50ms]",
+                                                                        "delay-[75ms]",
+                                                                        "delay-[100ms]",
+                                                                        "delay-[125ms]",
+                                                                        "delay-[150ms]",
+                                                                        "delay-[175ms]",
+                                                                        "delay-[200ms]",
+                                                                        "delay-[225ms]",
+                                                                        "delay-[250ms]",
+                                                                        "delay-[275ms]",
+                                                                        "delay-[300ms]"
+                                                                    ][t]
+                                                                ),
+                                                            "aria-hidden": "true",
+                                                            children: " " === e ? " " : e
+                                                        },
+                                                        t
+                                                    )
+                                                )
+                                            ]
+                                        }),
+                                        ". Always learning to keep my solutions modern, secure, and ready to scale."
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
+                });
             }
+
             var i = s(7604);
+
 
             function n() {
                 return (0, a.jsx)("div", {
@@ -402,134 +453,438 @@
 
             function p() {
                 return (0, a.jsxs)("div", {
-                    children: [(0, a.jsx)("ol", {
-                        className: "group/list",
-                        children: [{
-                            date: "Present",
-                            company: {
-                                name: "Itqan Systematic",
-                                link: ""
-                            },
-                            positions: ["ERP Developer", "", "Open to work"],
-                            desc: "Currently, I am employed at Itqan Systematic as an ERP Developer. I am keen to contribute to innovative projects and deliver solutions that prioritize user satisfaction.",
-                            tech: ["C#", "ERP", "Visual Studio", "SQL Server","Git",".NET Core"]
-                        }, {
-                            date: "2023",
-                            company: {
-                                name: "Freelancer",
-                                link: ""
-                            },
-                            positions: ["Mobile Developer", "", ""],
-                            desc: "Post my internship, I now invest my free time in crafting mobile applications. Proficient in Flutter, I'm actively seeking opportunities to apply my skills in a dynamic team. Eager to contribute to innovative projects and drive solutions focused on user satisfaction.",
-                            tech: ["Flutter", "Firebase", "Figma", "Github"]
-                        }, {
-                            date: "May — Sep 2023",
-                            company: {
-                                name: "Xentral Methods",
-                                link: "https://www.xentralmethods.com/"
-                            },
-                            positions: ["Augmented Reality Software Engineer"],
-                            desc: "At Xentral Methods, I interned as an Augmented Reality Software Engineer and Flutter mobile developer. This role immersed me in cutting-edge AR technology and honed my skills in creating immersive experiences. Additionally, I gained expertise in crafting versatile and user-friendly mobile applications.",
-                            tech: ["Flutter", "HTML", "JavaScript", "Gitlab", "MindAR", "ARcore"],
-                            links: [{
-                                title: "XentralMethods",
-                                url: "https://www.xentralmethods.com/"
-                            },]
-                        },{
-                            date: "2019-2023",
-                            company: {
-                                name: "Arabian Culture Society",
-                                link: "https://www.youtube.com/@acsmmu"
-                            },
-                            positions: ["High Committee Club Member", "", ""],
-                            desc: "volunteered as a High Committee Club Member in the Arabian Culture Society at Multimedia University for around 5 years during my university studies. In this role, I actively contributed to organizing cultural events and charity activities, and played a key role in promoting cultural awareness and engagement among students.",
-                            tech: ["Event Planning", "Teamwork", "Adaptability", "Communication","Problem-Solving","Time Management","Fundraising"]
-                        }, {
-                            date: "2019 — 2023",
-                            company: {
-                                name: "MMU",
-                                link: "https://www.mmu.edu.my/"
-                            },
-                            positions: ["Education"],
-                            desc: "I pursued Computer Science with a focus on Software Engineering at MMU University in Cyberjaya. This dynamic program equipped me with a strong foundation in theoretical concepts and practical skills, preparing me for the constantly changing field of software development. The vibrant campus and collaborative learning environment enriched my academic journey.",
-                            tech: ["C++", "Java", "HTML", "CSS", "JavaScript", "SQL"]
-                        }, {
-                            date: "2018",
-                            company: {
-                                name: "Alshola private school",
-                                link: "https://www.alsholaschool.com/"
-                            },
-                            positions: ["Education"],
-                            desc: "I attended Al Shola Private School in the United Arab Emirates during my school years. The institution provided a diverse and enriching educational experience, fostering both academic excellence and personal growth.",
-
-                        },].map(((e, t) => (0, a.jsx)("li", {
-                            className: "mb-12",
-                            children: (0, a.jsxs)("div", {
-                                className: "group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
-                                children: [(0, a.jsx)(n, {}), (0, a.jsx)("header", {
-                                    className: "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2",
-                                    "aria-label": e.date.replace("—", "to").replace("Dec", "December"),
-                                    children: e.date || ""
-                                }), (0, a.jsxs)("div", {
-                                    className: "z-10 sm:col-span-6",
-                                    children: [(0, a.jsx)("h3", {
-                                        className: "font-medium leading-snug text-slate-200",
-                                        children: e.positions.map(((t, s) => (0, a.jsx)("div", {
-                                            children: 0 === s ? (0, a.jsx)(i.Z, {
-                                                title: "".concat(t, " · ").concat(e.company.name),
-                                                label: "".concat(t, " at ").concat(e.company.name),
-                                                url: e.company.link,
-                                                fill: !0
-                                            }) : (0, a.jsx)("div", {
-                                                className: "text-slate-500",
-                                                "aria-hidden": "true",
-                                                children: t
-                                            })
-                                        }, s)))
-                                    }), (0, a.jsx)("p", {
-                                        className: "mt-2 text-sm leading-normal",
-                                        children: e.desc
-                                    }), e.links && (0, a.jsx)("ul", {
-                                        className: "mt-2 flex flex-wrap",
-                                        "aria-label": "Related links",
-                                        children: e.links.map(((e, t) => (0, a.jsx)("li", {
-                                            className: "mr-4",
-                                            children: (0, a.jsxs)("a", {
-                                                className: "relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300",
-                                                href: e.url,
-                                                target: "_blank",
-                                                rel: "noreferrer",
-                                                children: [(0, a.jsx)(o.Z, {
-                                                    use: "link",
-                                                    className: "mr-1 h-3 w-3"
-                                                }), (0, a.jsx)("span", {
-                                                    children: e.title
-                                                })]
-                                            })
-                                        }, t)))
-                                    }), e.tech && (0, a.jsx)("ul", {
-                                        className: "mt-2 flex flex-wrap",
-                                        "aria-label": "Technologies used",
-                                        children: e.tech.map(((e, t) => (0, a.jsx)("li", {
-                                            className: "mr-1.5 mt-2",
-                                            children: (0, a.jsx)(h.Z, {
-                                                text: e
-                                            })
-                                        }, t)))
-                                    })]
-                                })]
+                    children: [
+                        (0, a.jsx)("h2", {
+                            className: "text-lg font-semibold tracking-tight text-slate-200 mb-6",
+                            children: "Experience"
+                        }),
+                        (0, a.jsx)("ol", {
+                            className: "group/list",
+                            children: [
+                                {
+                                    date: "Jun 2024 — Present",
+                                    company: {
+                                        name: "SAMA Trending",
+                                        link: "https://samatrending.com/"
+                                    },
+                                    location: "Wyoming, United States",
+                                    positions: ["Software Engineering Project Manager"],
+                                    desc:
+                                        "Leading and contributing to full-cycle delivery of web, mobile, AI, automation, and ERP solutions, ensuring they align with business objectives and ship on time.",
+                                    tech: [
+                                        "Flutter",
+                                        "Next.js",
+                                        "Firebase",
+                                        "Supabase",
+                                        "AI / LLM",
+                                        "Agentic Automations",
+                                        "ERP",
+                                        "Scrum",
+                                        "Git",
+                                        "Vercel",
+                                        "DigitalOcean",
+                                        "Hostinger"
+                                    ]
+                                },
+                                {
+                                    date: "Dec 2023 — Nov 2024",
+                                    company: {
+                                        name: "Itqan Systematic",
+                                        link: ""
+                                    },
+                                    location: "Sana'a, Yemen",
+                                    positions: ["ERP Developer"],
+                                    desc:
+                                        "Implemented custom ERP modules, improved data accuracy, and optimized existing configurations to remove redundant processes across departments.",
+                                    tech: ["C#", ".NET Core", "ERP", "SQL Server", "Visual Studio", "Git"]
+                                },
+                                {
+                                    date: "May 2023 — Sep 2023",
+                                    company: {
+                                        name: "Xentral Methods",
+                                        link: "https://www.xentralmethods.com/"
+                                    },
+                                    location: "Cyberjaya, Malaysia",
+                                    positions: ["Full Stack / AR Developer"],
+                                    desc:
+                                        "Built a Flutter-based mobile app with AR features for education and contributed to web components, working with modern tooling and GitLab workflows.",
+                                    tech: ["Flutter", "HTML", "JavaScript", "GitLab", "MindAR", "ARCore"]
+                                }
+                            ].map((e, t) =>
+                                (0, a.jsx)(
+                                    "li",
+                                    {
+                                        className: "mb-12",
+                                        children: (0, a.jsxs)("div", {
+                                            className:
+                                                "group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
+                                            children: [
+                                                (0, a.jsx)(n, {}),
+                                                (0, a.jsx)("header", {
+                                                    className:
+                                                        "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2",
+                                                    "aria-label": e.date.replace("—", "to").replace("Dec", "December"),
+                                                    children: e.date || ""
+                                                }),
+                                                (0, a.jsxs)("div", {
+                                                    className: "z-10 sm:col-span-6",
+                                                    children: [
+                                                        (0, a.jsx)("h3", {
+                                                            className: "font-medium leading-snug text-slate-200",
+                                                            children: e.positions.map((t, s) =>
+                                                                (0, a.jsx)(
+                                                                    "div",
+                                                                    {
+                                                                        children:
+                                                                            0 === s
+                                                                                ? (0, a.jsx)(i.Z, {
+                                                                                    title: "".concat(t, " · ").concat(e.company.name),
+                                                                                    label: "".concat(t, " at ").concat(e.company.name),
+                                                                                    url: e.company.link,
+                                                                                    fill: !0
+                                                                                })
+                                                                                : (0, a.jsx)("div", {
+                                                                                    className: "text-slate-500",
+                                                                                    "aria-hidden": "true",
+                                                                                    children: t
+                                                                                })
+                                                                    },
+                                                                    s
+                                                                )
+                                                            )
+                                                        }),
+                                                        e.location &&
+                                                        (0, a.jsx)("p", {
+                                                            className: "text-xs text-slate-400 mt-1",
+                                                            children: e.location
+                                                        }),
+                                                        (0, a.jsx)("p", {
+                                                            className: "mt-2 text-sm leading-normal",
+                                                            children: e.desc
+                                                        }),
+                                                        e.links &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Related links",
+                                                            children: e.links.map((e, t) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-4",
+                                                                        children: (0, a.jsxs)("a", {
+                                                                            className:
+                                                                                "relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300",
+                                                                            href: e.url,
+                                                                            target: "_blank",
+                                                                            rel: "noreferrer",
+                                                                            children: [
+                                                                                (0, a.jsx)(o.Z, {
+                                                                                    use: "link",
+                                                                                    className: "mr-1 h-3 w-3"
+                                                                                }),
+                                                                                (0, a.jsx)("span", {
+                                                                                    children: e.title
+                                                                                })
+                                                                            ]
+                                                                        })
+                                                                    },
+                                                                    t
+                                                                )
+                                                            )
+                                                        }),
+                                                        e.tech &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Technologies used",
+                                                            children: e.tech.map((e, t) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-1.5 mt-2",
+                                                                        children: (0, a.jsx)(h.Z, {
+                                                                            text: e
+                                                                        })
+                                                                    },
+                                                                    t
+                                                                )
+                                                            )
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    },
+                                    t
+                                )
+                            )
+                        }),
+                        (0, a.jsx)("div", {
+                            className: "mt-12",
+                            children: (0, a.jsx)(m, {
+                                title: "View Full Résumé",
+                                url: "/resume.pdf",
+                                className: "font-semibold text-slate-200"
                             })
-                        }, t)))
-                    }), (0, a.jsx)("div", {
-                        className: "mt-12",
-                        children: (0, a.jsx)(m, {
-                            title: "View Full Résumé",
-                            url: "/resume.pdf",
-                            className: "font-semibold text-slate-200"
                         })
-                    })]
-                })
+                    ]
+                });
             }
+
+
+
+
+            function Education() {
+                return (0, a.jsxs)("div", {
+                    children: [
+                        (0, a.jsx)("h2", {
+                            className: "text-lg font-semibold tracking-tight text-slate-200 mb-6",
+                            children: "Education"
+                        }),
+                        (0, a.jsx)("ol", {
+                            className: "group/list",
+                            children: [
+                                {
+                                    date: "2019 — 2023",
+                                    school: {
+                                        name: "Multimedia University (MMU)",
+                                        link: "https://www.mmu.edu.my/"
+                                    },
+                                    degree: "BSc (Hons.) Computer Science (Software Engineering)",
+                                    desc:
+                                        "Learned data structures, databases, web and mobile development, and software engineering practices in a collaborative environment.",
+                                    tech: ["C++", "Java", "HTML", "CSS", "JavaScript", "SQL"]
+                                },
+                                {
+                                    date: "2018",
+                                    school: {
+                                        name: "Al Shola Private School",
+                                        link: "https://www.alsholaschool.com/"
+                                    },
+                                    degree: "High School",
+                                    desc:
+                                        "Completed secondary education with a strong academic foundation and extracurricular participation."
+                                }
+                            ].map((e, t) =>
+                                (0, a.jsx)(
+                                    "li",
+                                    {
+                                        className: "mb-12",
+                                        children: (0, a.jsxs)("div", {
+                                            className:
+                                                "group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
+                                            children: [
+                                                (0, a.jsx)(n, {}),
+                                                (0, a.jsx)("header", {
+                                                    className:
+                                                        "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2",
+                                                    children: e.date
+                                                }),
+                                                (0, a.jsxs)("div", {
+                                                    className: "z-10 sm:col-span-6",
+                                                    children: [
+                                                        (0, a.jsx)("h3", {
+                                                            className: "font-medium leading-snug text-slate-200",
+                                                            children: (0, a.jsx)(i.Z, {
+                                                                title: "".concat(e.degree, " · ").concat(e.school.name),
+                                                                url: e.school.link,
+                                                                fill: !0
+                                                            })
+                                                        }),
+                                                        (0, a.jsx)("p", {
+                                                            className: "mt-2 text-sm leading-normal",
+                                                            children: e.desc
+                                                        }),
+                                                        e.tech &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Technologies learned",
+                                                            children: e.tech.map((techItem, techIdx) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-1.5 mt-2",
+                                                                        children: (0, a.jsx)(h.Z, {
+                                                                            text: techItem
+                                                                        })
+                                                                    },
+                                                                    techIdx
+                                                                )
+                                                            )
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    },
+                                    t
+                                )
+                            )
+                        })
+                    ]
+                });
+            }
+
+
+            function Volunteering() {
+                return (0, a.jsxs)("div", {
+                    children: [
+                        (0, a.jsx)("h2", {
+                            className: "text-lg font-semibold tracking-tight text-slate-200 mb-6",
+                            children: "Volunteering"
+                        }),
+                        (0, a.jsx)("ol", {
+                            className: "group/list",
+                            children: [
+                                {
+                                    date: "2019 — 2023",
+                                    org: {
+                                        name: "Arabian Culture Society – Malaysia",
+                                        link: "https://www.youtube.com/@acsmmu"
+                                    },
+                                    role: "High Committee Club Member",
+                                    desc: "",
+                                    highlights: [
+                                        "Volunteered as a high committee member for ~5 years, helping organize cultural and charity activities and promoting student engagement.",
+                                    ],
+                                    links: [
+                                        {
+                                            title: "Eid Happiness 5 (2023)",
+                                            url: "https://www.youtube.com/watch?v=ng3A9VXnXTU"
+                                        },
+                                        {
+                                            title: "Eid Happiness 4 (2022)",
+                                            url: "https://www.youtube.com/watch?v=kkaSKAnzUog"
+                                        },
+                                        {
+                                            title: "Eid Happiness 3 (2019)",
+                                            url: "https://www.youtube.com/watch?v=WBvrZT7fvkY"
+                                        },
+                                        {
+                                            title: "A’ata Initiative 6 (2023)",
+                                            url: "https://www.youtube.com/watch?v=26tr8iT6Ev4"
+                                        },
+                                        {
+                                            title: "A’ata Initiative 5 (2022)",
+                                            url: "https://www.youtube.com/watch?v=frp3Iw3xT1g&pp=0gcJCQMKAYcqIYzv"
+                                        },
+                                        {
+                                            title: "A’ata Initiative 4 (2021)",
+                                            url: "https://www.youtube.com/watch?v=esOpojmaqc4&t=14s"
+                                        }
+                                    ],
+                                    tech: [
+                                        "Event Planning",
+                                        "Logistics",
+                                        "Teamwork",
+                                        "Communication",
+                                        "Time Management"
+                                    ]
+                                }
+                            ].map((item, idx) =>
+                                (0, a.jsx)(
+                                    "li",
+                                    {
+                                        className: "mb-12",
+                                        children: (0, a.jsxs)("div", {
+                                            className:
+                                                "group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
+                                            children: [
+                                                (0, a.jsx)(n, {}),
+                                                (0, a.jsx)("header", {
+                                                    className:
+                                                        "z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2",
+                                                    children: item.date
+                                                }),
+                                                (0, a.jsxs)("div", {
+                                                    className: "z-10 sm:col-span-6",
+                                                    children: [
+                                                        (0, a.jsx)("h3", {
+                                                            className: "font-medium leading-snug text-slate-200",
+                                                            children: (0, a.jsx)(i.Z, {
+                                                                title: "".concat(item.role, " · ").concat(item.org.name),
+                                                                url: item.org.link,
+                                                                fill: !0
+                                                            })
+                                                        }),
+                                                        item.desc &&
+                                                        (0, a.jsx)("p", {
+                                                            className: "mt-2 text-sm leading-normal",
+                                                            children: item.desc
+                                                        }),
+                                                        item.highlights &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 space-y-1 text-sm leading-normal text-slate-400",
+                                                            children: item.highlights.map((hl, hlIdx) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        children: hl
+                                                                    },
+                                                                    hlIdx
+                                                                )
+                                                            )
+                                                        }),
+                                                        item.links &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Related links",
+                                                            children: item.links.map((link, linkIdx) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-4 mt-2",
+                                                                        children: (0, a.jsxs)("a", {
+                                                                            className:
+                                                                                "relative inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300",
+                                                                            href: link.url,
+                                                                            target: "_blank",
+                                                                            rel: "noreferrer",
+                                                                            children: [
+                                                                                (0, a.jsx)(o.Z, {
+                                                                                    use: "link",
+                                                                                    className: "mr-1 h-3 w-3"
+                                                                                }),
+                                                                                (0, a.jsx)("span", {
+                                                                                    children: link.title
+                                                                                })
+                                                                            ]
+                                                                        })
+                                                                    },
+                                                                    linkIdx
+                                                                )
+                                                            )
+                                                        }),
+                                                        item.tech &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Skills used",
+                                                            children: item.tech.map((skill, skillIdx) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-1.5 mt-2",
+                                                                        children: (0, a.jsx)(h.Z, {
+                                                                            text: skill
+                                                                        })
+                                                                    },
+                                                                    skillIdx
+                                                                )
+                                                            )
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    },
+                                    idx
+                                )
+                            )
+                        })
+                    ]
+                });
+            }
+
+
 
             function u() {
                 return (0, a.jsx)("footer", {})
@@ -617,99 +972,153 @@
             function v() {
                 let e = e => { };
                 return (0, a.jsxs)("div", {
-                    children: [(0, a.jsx)("ul", {
-                        className: "group/list",
-                        children: [
-
-
-                            {
-                                title: "Diagnosio",
-                                link: "https://github.com/Hagwan/Diagnosio",
-                                desc: "Designed and implemented a Flutter application leveraging artificial intelligence to diagnose patient diseases via text or image inputs, offering preliminary health information prior to a clinical consultation.",
-                                tech: ["Flutter", "Dart", "Gemini-API", "Android", "AI",],
-                            },
-                            {
-                                title: "AR-Vision",
-                                link: "ar.html",
-                                desc: "Welcome to My AR Project, a dynamic and engaging augmented reality (AR) application built using MindAR. This project is designed to showcase the potential of AR across various fields such as education, shopping, and entertainment.",
-                                tech: ["MindAR", "AFrame", "3DModels", "Augmented Reality", "HTML", "CSS", "JavaScript"],
-                            },
-
-                            {
-                                title: "Gemini Meets ChatGPT",
-                                link: "https://github.com/Hagwan/GeminiAI-Powered-ChatGPT-UI",
-                                desc: "GeminiAI-Powered-ChatGPT-UI Enjoy a design that mirrors ChatGPT's familiarity, making it easy for users to transition and explore GeminiAI's functionalities.",
-                                tech: ["HTML", "CSS", "JavaScript ", "Github", " GeminiAI-API", "Node.js"],
-
-                            },
-
-                            {
-                                title: "MyPet",
-                                link: "https://github.com/Hagwan/MyPet",
-                                desc: "MyPet is a comprehensive Flutter app catering to pet owners' needs, offering services like vet appointments, pet hotels, reminders, and profiles.",
-                                tech: ["Flutter", "Figma", "Firebase ", "Github", "Testing", "API", "Android"],
-                            },
-
-
-                            {
-                                title: "SuperApp",
-                                link: "https://www.xentralmethods.com/",
-                                desc: "During my internship, I worked with Xentral Methods in SuperApp, a Flutter application for iOS and Android that focuses on augmented reality (AR) for children's books.",
-                                tech: ["Flutter", "MindAR", "arcore_flutter ", "Gitlab", "Firebase", "Figma"],
-                                github: "https://github.com/hagwanx/"
-                            },
-
-
-
-
-
-
-
-
-
-                        ].map(((t, s) => (0, a.jsx)("li", {
-                            className: "mb-12",
-                            children: (0, a.jsxs)("div", {
-                                className: "group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
-                                children: [(0, a.jsx)(n, {}), (0, a.jsxs)("div", {
-                                    className: "z-10 sm:order-2 sm:col-span-6",
-                                    children: [(0, a.jsx)("h3", {
-                                        children: (0, a.jsx)(i.Z, {
-                                            title: t.title,
-                                            url: t.link,
-                                            fill: !0
+                    children: [
+                        (0, a.jsx)("h2", {
+                            className: "text-lg font-semibold tracking-tight text-slate-200 mb-6",
+                            children: "Projects"
+                        }),
+                        (0, a.jsx)("ul", {
+                            className: "group/list",
+                            children: [
+                                {
+                                    title: "Ta’Allam (SDAIA – Allam Challenge)",
+                                    link: "",
+                                    desc:
+                                        "AI-powered Arabic learning app for children, built for the Allam Challenge to leverage the Allam model for interactive, education-focused experiences.",
+                                    tech: ["AI", "LLM", "Education", "Flutter / Web", "Arabic"]
+                                },
+                                {
+                                    title: "Investment Trading Group (ITG)",
+                                    link: "https://investmenttradinggroup.eu/",
+                                    desc:
+                                        "Website for a private investment firm in Spain that uses advanced analytics and AI to make trading decisions, presenting services and positioning clearly.",
+                                    tech: ["Next.js / Web", "AI", "Responsive UI", "Deployment"]
+                                },
+                                {
+                                    title: "YAMEX Group",
+                                    link: "https://yamexgroup.com/",
+                                    desc:
+                                        "Trade and export website showcasing services, sectors, and contact channels for international partnerships, built for a real client.",
+                                    tech: ["Web", "Business Website", "SEO", "Hosting"]
+                                },
+                                {
+                                    title: "SpaceTech",
+                                    link: "https://www.spacetech.dev/",
+                                    desc:
+                                        "Landing site for AI-native, interoperable business systems covering software, e-commerce, ERP, and real-time AI tools.",
+                                    tech: ["Next.js", "AI-native", "Product Website", "Vercel / Hosting"]
+                                },
+                                {
+                                    title: "Agentic Automations",
+                                    link: "",
+                                    desc:
+                                        "Built AI-driven automations that trigger actions, fetch data, and make decisions across n8n, APIs, and ERP to reduce manual operations.",
+                                    tech: ["n8n", "AI / LLM", "APIs", "ERP", "Automation"]
+                                },
+                                {
+                                    title: "Diagnosio",
+                                    link: "https://github.com/Hagwan/Diagnosio",
+                                    desc:
+                                        "Flutter app using AI to analyze symptoms via text or image and provide preliminary medical insights before seeing a doctor.",
+                                    tech: ["Flutter", "Dart", "Gemini-API", "Android", "AI"]
+                                },
+                                {
+                                    title: "AR-Vision",
+                                    link: "ar.html",
+                                    desc:
+                                        "Augmented reality demo built with MindAR to showcase AR use cases in education, shopping, and entertainment.",
+                                    tech: ["MindAR", "A-Frame", "3D Models", "AR", "HTML", "CSS", "JavaScript"]
+                                },
+                                {
+                                    title: "Gemini Meets ChatGPT",
+                                    link: "https://github.com/Hagwan/GeminiAI-Powered-ChatGPT-UI",
+                                    desc:
+                                        "ChatGPT-style web UI that integrates Gemini AI, giving users a familiar chat layout to test Gemini features.",
+                                    tech: ["HTML", "CSS", "JavaScript", "GitHub", "GeminiAI-API", "Node.js"]
+                                },
+                                {
+                                    title: "MyPet",
+                                    link: "https://github.com/Hagwan/MyPet",
+                                    desc:
+                                        "Flutter app for pet owners with vet booking, hotels, reminders, and pet profiles to centralize pet care.",
+                                    tech: ["Flutter", "Firebase", "Figma", "API", "Android"]
+                                },
+                                {
+                                    title: "SuperApp (Xentral Methods)",
+                                    link: "https://www.xentralmethods.com/",
+                                    desc:
+                                        "Flutter app for iOS and Android focused on AR for children’s books, built during internship at Xentral Methods.",
+                                    tech: ["Flutter", "MindAR", "ARCore", "GitLab", "Firebase", "Figma"],
+                                    github: "https://github.com/hagwanx/"
+                                }
+                            ].map((t, s) =>
+                                (0, a.jsx)(
+                                    "li",
+                                    {
+                                        className: "mb-12",
+                                        children: (0, a.jsxs)("div", {
+                                            className:
+                                                "group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
+                                            children: [
+                                                (0, a.jsx)(n, {}),
+                                                (0, a.jsxs)("div", {
+                                                    className: "z-10 sm:order-2 sm:col-span-6",
+                                                    children: [
+                                                        (0, a.jsx)("h3", {
+                                                            children: (0, a.jsx)(i.Z, {
+                                                                title: t.title,
+                                                                url: t.link,
+                                                                fill: !0
+                                                            })
+                                                        }),
+                                                        (0, a.jsx)("p", {
+                                                            className: "mt-2 text-sm leading-normal",
+                                                            children: t.desc
+                                                        }),
+                                                        t.github &&
+                                                        (0, a.jsx)(e, {
+                                                            repoUrl: t.github
+                                                        }),
+                                                        t.download && (0, a.jsxs)("a", {}),
+                                                        t.tech &&
+                                                        (0, a.jsx)("ul", {
+                                                            className: "mt-2 flex flex-wrap",
+                                                            "aria-label": "Technologies used:",
+                                                            children: t.tech.map((techItem, techIdx) =>
+                                                                (0, a.jsx)(
+                                                                    "li",
+                                                                    {
+                                                                        className: "mr-1.5 mt-2",
+                                                                        children: (0, a.jsx)(h.Z, {
+                                                                            text: techItem
+                                                                        })
+                                                                    },
+                                                                    techIdx
+                                                                )
+                                                            )
+                                                        })
+                                                    ]
+                                                }),
+                                                (0, a.jsx)(f(), {})
+                                            ]
                                         })
-                                    }), (0, a.jsx)("p", {
-                                        className: "mt-2 text-sm leading-normal",
-                                        children: t.desc
-                                    }), t.github && (0, a.jsx)(e, {
-                                        repoUrl: t.github
-                                    }), t.download && (0, a.jsxs)("a", {}), t.tech && (0, a.jsx)("ul", {
-                                        className: "mt-2 flex flex-wrap",
-                                        "aria-label": "Technologies used:",
-                                        children: t.tech.map(((e, t) => (0, a.jsx)("li", {
-                                            className: "mr-1.5 mt-2",
-                                            children: (0, a.jsx)(h.Z, {
-                                                text: e
-                                            })
-                                        }, t)))
-                                    })]
-                                }), (0, a.jsx)(f(), {
-                                })]
+                                    },
+                                    s
+                                )
+                            )
+                        }),
+                        (0, a.jsx)("div", {
+                            className: "mt-12",
+                            children: (0, a.jsx)(m, {
+                                title: "View Full Project Archive",
+                                url: "https://github.com/Hagwan",
+                                className: "font-semibold text-slate-200"
                             })
-                        }, s)))
-                    }),
-
-                    (0, a.jsx)("div", {
-                        className: "mt-12",
-                        children: (0, a.jsx)(m, {
-                            title: "View Full Project Archive",
-                            url: "https://github.com/Hagwan",
-                            className: "font-semibold text-slate-200"
                         })
-                    })]
-                })
+                    ]
+                });
             }
+
             var b = s(8425),
                 j = s(4910);
 
@@ -747,24 +1156,41 @@
                         e && a.observe(e)
                     }))
                 }), []);
-                let t = [{
-                    heading: "About",
-                    label: "About me",
-                    component: (0, a.jsx)(r, {})
-                }, {
-                    heading: "Experience",
-                    label: "Work experience",
-                    component: (0, a.jsx)(p, {})
-                }, {
-                    heading: "Projects",
-                    label: "Selected projects",
-                    component: (0, a.jsx)(v, {})
-                }, {
-                    heading: "",
-                    label: "Blog posts",
-                    component: (0, a.jsx)(y, {}),
-                    hideFromNav: !0
-                }];
+                let t = [
+                    {
+                        heading: "About",
+                        label: "About me",
+                        component: (0, a.jsx)(r, {})
+                    },
+                    {
+                        heading: "Experience",
+                        label: "Work experience",
+                        component: (0, a.jsx)(p, {})
+                    },
+                    {
+                        heading: "Projects",
+                        label: "Selected projects",
+                        component: (0, a.jsx)(v, {})
+                    },
+                    {
+                        heading: "Education",
+                        label: "Education history",
+                        component: (0, a.jsx)(Education, {})
+                    },
+                    {
+                        heading: "Volunteering",
+                        label: "Volunteering & activities",
+                        component: (0, a.jsx)(Volunteering, {})
+                    },
+
+                    {
+                        heading: "",
+                        label: "Blog posts",
+                        component: (0, a.jsx)(y, {}),
+                        hideFromNav: !0
+                    }
+                ];
+
                 return (0, a.jsxs)("div", {
                     className: "lg:flex lg:justify-between lg:gap-4",
                     children: [(0, a.jsx)(b.Z, {
